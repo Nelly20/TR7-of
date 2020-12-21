@@ -28,7 +28,7 @@
         </ul>
         <div class="header-phone">
           <p class="header-phone__text">Горячая линия</p>
-          <a class="header-phone__btn" href="">+ 0(800) 2127-32</a>
+          <a class="header-phone__btn" href="tel:+0800212732">+ 0(800) 2127-32</a>
         </div>
       </div>
     </header>
@@ -58,7 +58,7 @@
                 <label class="form__label" for="name">Введите ваше имя</label>
                 <input class="form__input" type="text" id="name" placeholder="Иванов Иван Иванович" required><br>
                 <label class="form__label" for="number">Введите ваш телефон</label>
-                <input class="form__input" type="text" id="number" placeholder="+380 95 567-7889" required><br>
+                <input class="form__input" type="text" id="number" placeholder="+380 (95) 567-7889" required><br>
                 <input class="form__btn" type="submit" value="Заказать">
               </form>
               <p class="form__text">При заказе одного из курсов</p>
@@ -133,7 +133,7 @@
             <label class="form__label" for="name2">Введите ваше имя</label>
             <input class="form__input" type="text" id="name2" placeholder="Иванов Иван Иванович" required><br>
             <label class="form__label" for="number2">Введите ваш телефон</label>
-            <input class="form__input" type="text" id="number2" placeholder="+380 95 567-7889" required><br>
+            <input class="form__input" type="text" id="number2" placeholder="+380 (95) 567-7889" required id="phone3"><br>
             <input class="form__btn" type="submit" value="Заказать">
           </form>
           <p class="form__text">При заказе одного из курсов</p>
@@ -285,27 +285,71 @@
         <div class="container">
           <h2 class="title">Как начать использовать <span>TF7©</span></h2>
           <ul class="steps__list">
-            <li class="steps__item">Вы оставляете заявку<br>на сайте или звоните</li>
-            <li class="steps__item">Наш консультант<br>перезванивает вам</li>
-            <li class="steps__item">Мы анализируем состояние<br>вашего здоровья</li>
-            <li class="steps__item">Определяем курс<br>приема</li>
-            <li class="steps__item">Вы наслаждаетесь<br>результатом</li>
-            <li class="steps__item">Специалисты центра<br>всегда готовы ответить<br>на ваши вопросы</li>
-            <li class="steps__item">Оплата после<br>доставки</li>
-            <li class="steps__item">Доставка в ваш<br>город</li>
+            <li class="steps__item steps__item--envelope">Вы оставляете заявку<br>на сайте или звоните</li>
+            <li class="steps__item steps__item--consult">Наш консультант<br>перезванивает вам</li>
+            <li class="steps__item steps__item--analyze">Мы анализируем <br>состояние вашего здоровья</li>
+            <li class="steps__item steps__item--calendar">Определяем курс<br>приема</li>
+            <li class="steps__item steps__item--result">Вы наслаждаетесь<br>результатом</li>
+            <li class="steps__item steps__item--doctor">Специалисты центра<br>всегда готовы ответить<br>на ваши вопросы</li>
+            <li class="steps__item steps__item--money">Оплата после<br>доставки</li>
+            <li class="steps__item steps__item--delivery">Доставка в ваш<br>город</li>
           </ul>
         </div>
       </section>
 
+      <section class="request container">
+        <h2 class="visually-hidden">Заявка</h2>
+        <div class="request__info">
+          <div class="form__title">
+            <p class="form__title-text">Количество товаров<br>на ближайшем<br>к вам складе ограничено:</p>
+            <p class="form__title-number">4 уп.</p>
+          </div>
+
+          <div class="form-price">
+            <p class="form-price--text">Цена на экспорт:<br><span>798 грн.</span></p>
+            <p class="form-price--text">Цена со скидкой:<br><span>22 грн.</span></p>
+          </div>
+        </div>
+        <img src="img/tr7.png" alt="TR7">
+        <div class="request__form">
+          <form method="post">
+            <label class="form__label" for="name3">Введите ваше имя</label>
+            <input class="form__input" type="text" id="name3" placeholder="Иванов Иван Иванович" required><br>
+            <label class="form__label" for="number3">Введите ваш телефон</label>
+            <input class="form__input" type="text" id="number3" placeholder="+380 (95) 567-7889" required id="phone2"><br>
+            <input class="form__btn" type="submit" value="Заказать">
+          </form>
+          <p class="form__text">При заказе одного из курсов</p>
+        </div>
+      </section>
 
 
 
     </main>
     <footer class="page-footer wow animate__animated animate__zoomIn">
       <div class="container footer">
-        <p class="page-footer__copyright">Все права защищены © 2020</p>
-        <p class="header__phone">0(800) 667-878</p>
+        <div>
+          <img class="header__logo" src="img/logo-footer.svg" alt="лого" width="140" height="70">
+          <p class="page-footer__copyright">Все права защищены © 2020</p>
+        </div>
+
+
+        <div class="footer-phone">
+          <p class="footer-phone__text">Горячая линия</p>
+          <a class="header-phone__btn" href="tel:+0800212732">+ 0(800) 2127-32</a>
+        </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#number").mask("+380 (99) 999-9999");
+        $("#number2").mask("+380 (99) 999-9999");
+        $("#number3").mask("+380 (99) 999-9999");
+      });
+    </script>
   </body>
 </html>
