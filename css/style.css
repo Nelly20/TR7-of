@@ -38,7 +38,7 @@ a {
 
 .page-header {
   padding: 10px 0;
-  background-color: #D3CFCF; }
+  background-color: #d3cfcf; }
 
 .header {
   display: flex;
@@ -166,7 +166,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #D3CFCF;
+  background-color: #d3cfcf;
   border-radius: 5px; }
 
 .form__title-number {
@@ -276,7 +276,7 @@ a {
 .symptoms__text {
   width: 420px;
   padding: 10px;
-  background-color: #D3CFCF;
+  background-color: #d3cfcf;
   border-radius: 5px; }
 
 .effective {
@@ -413,22 +413,22 @@ a {
     color: #f34c57; }
 
 .advantages {
-  margin-top: 70px;
   display: grid;
-  grid-template-columns: 1fr 350px;
-  grid-column-gap: 100px; }
+  margin-top: 70px;
+  grid-column-gap: 100px;
+  grid-template-columns: 1fr 350px; }
   .advantages .title {
     margin-bottom: 40px; }
 
 .advantages__text {
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #2f2e2e;
-  margin-bottom: 20px; }
+  color: #2f2e2e; }
   .advantages__text span {
-    color: #f34c57;
-    font-weight: 600; }
+    font-weight: 600;
+    color: #f34c57; }
 
 .expert {
   margin-top: 70px;
@@ -644,7 +644,6 @@ a {
     margin-top: 0; }
 
 .page-footer__copyright {
-  margin-bottom: 0;
   margin-bottom: 0;
   font-size: 14px;
   color: #ffffff; }
