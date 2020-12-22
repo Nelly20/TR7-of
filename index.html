@@ -59,10 +59,10 @@
                 <input type="hidden" name="admin_email" value="nelly.turak@gmail.com">
                 <input type="hidden" name="form_subject" value="Заявка TR7">
                 <label class="form__label" for="name">Введите ваше имя</label>
-                <input class="form__input" type="text" id="name" name="name" placeholder="Иванов Иван Иванович" required><br>
+                <input class="form__input" type="text" id="name" placeholder="Иванов Иван Иванович" required><br>
                 <label class="form__label" for="number">Введите ваш телефон</label>
-                <input class="form__input" type="text" id="number" name="number" placeholder="+380 (95) 567-7889" required><br>
-                <input class="form__btn" type="submit" value="Заказать">
+                <input class="form__input" type="text" id="number" placeholder="+380 (95) 567-7889" required><br>
+                  <input class="form__btn" type="submit" value="Заказать" data-toggle="modal" data-target="#exampleModal">
               </form>
               <p class="form__text">При заказе одного из курсов</p>
             </div>
@@ -128,11 +128,14 @@
         <img class="main-screen__img" src="img/tr7.png" alt="TR7" width="300" height="461">
         <div class="request__form">
           <form method="post">
+            <input type="hidden" name="project_name" value="TR7">
+            <input type="hidden" name="admin_email" value="nelly.turak@gmail.com">
+            <input type="hidden" name="form_subject" value="Заявка TR7">
             <label class="form__label" for="name2">Введите ваше имя</label>
             <input class="form__input" type="text" id="name2" placeholder="Иванов Иван Иванович" required><br>
             <label class="form__label" for="number2">Введите ваш телефон</label>
             <input class="form__input" type="text" id="number2" placeholder="+380 (95) 567-7889" required><br>
-            <input class="form__btn" type="submit" value="Заказать">
+              <input class="form__btn" type="submit" value="Заказать" data-toggle="modal" data-target="#exampleModal">
           </form>
           <p class="form__text">При заказе одного из курсов</p>
         </div>
@@ -323,11 +326,14 @@
         <img class="main-screen__img" src="img/tr7.png" alt="TR7" width="300" height="461">
         <div class="request__form">
           <form method="post">
+            <input type="hidden" name="project_name" value="TR7">
+            <input type="hidden" name="admin_email" value="nelly.turak@gmail.com">
+            <input type="hidden" name="form_subject" value="Заявка TR7">
             <label class="form__label" for="name2">Введите ваше имя</label>
             <input class="form__input" type="text" id="name2" placeholder="Иванов Иван Иванович" required><br>
             <label class="form__label" for="number2">Введите ваш телефон</label>
             <input class="form__input" type="text" id="number2" placeholder="+380 (95) 567-7889" required><br>
-            <input class="form__btn" type="submit" value="Заказать">
+            <input class="form__btn" type="submit" value="Заказать" data-toggle="modal" data-target="#exampleModal">
           </form>
           <p class="form__text">При заказе одного из курсов</p>
         </div>
@@ -345,11 +351,25 @@
         </div>
       </div>
     </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ваш заказ принят</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Спасибо за заказ!</p>
+        </div>
+      </form>
+    </div>
+  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <script>
       $(document).ready(function() {
         $("#number").mask("+380 (99) 999-9999");
